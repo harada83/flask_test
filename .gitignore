@@ -1,3 +1,5 @@
 pstgsql_pass
 .venv
 .idea/
+migrations/
+.env

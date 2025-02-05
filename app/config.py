@@ -9,8 +9,8 @@ class Config(object):
 
     USER = environ.get('POSTGRES_USER', 'tyzhinov')
     PASSWORD = environ.get('POSTGRES_PASSWORD', 'ryodtery')
-    HOST = environ.get('POSTGRES_HOST', '127.0.0.1')
-    PORT = environ.get('POSTGRES_PORT', 5433)
+    HOST = environ.get('POSTGRES_HOST', 'postgres')
+    PORT = environ.get('POSTGRES_PORT', 5432)
     DB = environ.get('POSTGRES_DB', 'flask_test')
 
     SQLALCHEMY_DATABASE_URI = f"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB}"
